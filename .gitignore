@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Strapi
+.build/
+.cache/
+public/uploads/
+
+# Next.js
+.next/
+out/
+
+# Ambiente e Configurações Sensíveis
+.env
+.env.local
+.DS_Store
+
+# Logs
+logs/
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Editor Config
+.vscode/
+.idea/
