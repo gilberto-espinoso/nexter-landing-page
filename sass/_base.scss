@@ -17,6 +17,8 @@ $font-display: "Josefin Sans", sans-serif;
 // RESPONSIVE BREAKPOINTS
 $xlg: 75em; //1200px
 $lg: 62.5em; //1000px
+$md: 50em; // 800px
+$mb: 37.5em; // 600px
 
 *,
 *::before,
@@ -76,5 +78,9 @@ body {
       [full-start] minmax(6rem, 1fr)
       [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
       [center-end] minmax(6rem, 1fr) [full-end];
+  }
+
+  @media only screen and(max-width:$md) {
+    grid-template-rows: 6rem calc(100vh - 6rem);
   }
 }
